@@ -28,36 +28,36 @@ Install via npm:
 
 ## Snake case
 
-#### toSnake(input, [capFirst])
+#### nake(input, [capFirst])
 
 Converts the input string or hash to snake case. Set `capFirst` to true to capitalize
 the first letter of the output string.
 
-    morph.toSnake('loremIpsumDolor')        // => 'lorem_ipsum_dolor'
-    morph.toSnake('LOREM_IPSUM_DOLOR')      // => 'lorem_ipsum_dolor'
-    morph.toSnake('lorem-Ipsum.Dolor')      // => 'lorem_ipsum_dolor'
+    morph.snake('loremIpsumDolor')        // => 'lorem_ipsum_dolor'
+    morph.snake('LOREM_IPSUM_DOLOR')      // => 'lorem_ipsum_dolor'
+    morph.snake('lorem-Ipsum.Dolor')      // => 'lorem_ipsum_dolor'
 
 ## Caps snake case
 
-#### toSnakeCaps(input)
+#### snakeCaps(input)
 
 Converts the input string or hash to caps snake case.
 
-    morph.toSnakeCaps('loremIpsumDolor')        // => 'LOREM_IPSUM_DOLOR'
-    morph.toSnakeCaps('lorem_ipsum_dolor')      // => 'LOREM_IPSUM_DOLOR'
-    morph.toSnakeCaps('lorem-Ipsum.Dolor')      // => 'LOREM_IPSUM_DOLOR'
+    morph.snakeCaps('loremIpsumDolor')        // => 'LOREM_IPSUM_DOLOR'
+    morph.snakeCaps('lorem_ipsum_dolor')      // => 'LOREM_IPSUM_DOLOR'
+    morph.snakeCaps('lorem-Ipsum.Dolor')      // => 'LOREM_IPSUM_DOLOR'
 
 ## Camel case
 
-#### toCamel(input, [capFirst])
+#### camel(input, [capFirst])
 #### toUpperCamel(input, [capFirst])
 
 Converts the input string or hash to caps snake case. Set `capFirst` to true to
 capitalize the first letter of the string, or use the aliased **toUpperCamel**
 function.
 
-    morph.toCamel('lorem_ipsum_dolor')          // => 'loremIpsumDolor'
-    morph.toCamel('lorem-Ipsum.dolor')          // => 'loremIpsumDolor'
+    morph.camel('lorem_ipsum_dolor')          // => 'loremIpsumDolor'
+    morph.camel('lorem-Ipsum.dolor')          // => 'loremIpsumDolor'
     morph.toUpperCamel('LOREM_IPSUM_DOLOR')     // => 'LoremIpsumDolor'
 
 ## Dashed
@@ -98,7 +98,7 @@ To convert an object's keys to a new style, pass in an object as input. Note
 that **all** keys will be converted.
 
     var obj = {some_key: 123, another_key: 456}
-    morph.toCamel(obj)                         // => {someKey: 123, anotherKey: 456}
+    morph.camel(obj)                         // => {someKey: 123, anotherKey: 456}
 
 ## Running the tests
 
