@@ -1,0 +1,17 @@
+{
+  "name": "morph",
+  "repo": "cmoncreif/morph",
+  "description": "Lightweight string transformations",
+  "version": "0.0.1",
+  "keywords": [
+    "string",
+    "transformation"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ]
+}

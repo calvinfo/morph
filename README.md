@@ -14,17 +14,17 @@ Install via npm:
 
     var morph = require('morph')
 
-    morph.toSnake('loremIpsumDolor')         // => 'lorem_ipsum_dolor'
-    morph.toSnakeCaps('loremIpsumDolor')     // => 'LOREM_IPSUM_DOLOR'
-    morph.toCamel('lorem_ipsum_dolor')       // => 'loremIpsumDolor'
-    morph.toUpperCamel('lorem_ipsum_dolor')  // => 'LoremIpsumDolor'
-    morph.toDashed('lorem_ipsum_dolor')      // => 'lorem-ipsum-dolor'
-    morph.toHuman('lorem_ipsum_dolor')       // => 'Lorem ipsum dolor'
-    morph.toTitle('lorem_ipsum_dolor')       // => 'Lorem Ipsum Dolor'
+    morph.snake('loremIpsumDolor')          // => 'lorem_ipsum_dolor'
+    morph.snakeCaps('loremIpsumDolor')      // => 'LOREM_IPSUM_DOLOR'
+    morph.camel('lorem_ipsum_dolor')        // => 'loremIpsumDolor'
+    morph.camel('lorem_ipsum_dolor', true)  // => 'LoremIpsumDolor'
+    morph.dashed('lorem_ipsum_dolor')       // => 'lorem-ipsum-dolor'
+    morph.human('lorem_ipsum_dolor')        // => 'Lorem ipsum dolor'
+    morph.title('lorem_ipsum_dolor')        // => 'Lorem Ipsum Dolor'
 
     // Convert an object's keys
     var obj = {loremIpsum: 'test', dolorSit: 'test'}
-    morph.toSnake(obj)                       // => {lorem_ipsum: 'test', dolor_sit: 'test'}
+    morph.snake(obj)                       // => {lorem_ipsum: 'test', dolor_sit: 'test'}
 
 ## Snake case
 
@@ -41,7 +41,7 @@ the first letter of the output string.
 
 #### toSnakeCaps(input)
 
-Converts the input string or hash to caps snake case. 
+Converts the input string or hash to caps snake case.
 
     morph.toSnakeCaps('loremIpsumDolor')        // => 'LOREM_IPSUM_DOLOR'
     morph.toSnakeCaps('lorem_ipsum_dolor')      // => 'LOREM_IPSUM_DOLOR'
@@ -52,7 +52,7 @@ Converts the input string or hash to caps snake case.
 #### toCamel(input, [capFirst])
 #### toUpperCamel(input, [capFirst])
 
-Converts the input string or hash to caps snake case. Set `capFirst` to true to 
+Converts the input string or hash to caps snake case. Set `capFirst` to true to
 capitalize the first letter of the string, or use the aliased **toUpperCamel**
 function.
 
@@ -86,7 +86,7 @@ to leave the first letter of the string lowercase.
 
 #### toTitle(input)
 
-Converts the input string or hash to title format. 
+Converts the input string or hash to title format.
 
     morph.toTitle('lorem_ipsum_dolor')         // => 'Lorem Ipsum Dolor'
     morph.toTitle('loremIpsumDolor')           // => 'Lorem Ipsum Dolor'

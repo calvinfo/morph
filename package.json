@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/calvinfo/morph.git"
+    "url": "https://github.com/cmoncrief/morph.git"
+  },
+  "scripts" : {
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "string",
@@ -21,8 +24,7 @@
   "author": "Charles Moncrief",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "~1.8.1",
-    "coffee-script": "~1.4.0"
+    "mocha": "~1.8.1"
   },
   "engines": { "node" : "*"}
 }
