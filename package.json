@@ -2,14 +2,10 @@
   "name": "morph",
   "version": "0.2.0",
   "description": "Lightweight string transformations",
-  "main": "lib/morph.js",
-  "scripts": {
-    "prepublish" : "cake build",
-    "test": "cake test"
-  },
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cmoncrief/morph.git" 
+    "url": "https://github.com/calvinfo/morph.git"
   },
   "keywords": [
     "string",
